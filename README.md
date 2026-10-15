@@ -14,8 +14,8 @@
 | | Project | What it is | Stack | Links |
 |---|---|---|---|---|
 | 🛡️ | **[Amnesia](https://github.com/navi-crwn/amnesia)** | Your Mac forgets everything at logout, except the logins and files you keep. Encrypted Profile Vault, backups to USB, SSH or cloud, panic word. Windows version too. | Swift · SwiftUI · Bash | [Website](https://navi-crwn.github.io/amnesia/) · `brew install navi-crwn/tap/amnesia` |
-| 🔗 | **[HEL.ink](https://github.com/navi-crwn/hel.ink)** | Link shortener with click analytics and a block-based link-in-bio page. 20 themes, API & ShareX, 2FA, phishing scans. No premium tier. | Laravel 12 · PHP · Tailwind | [hel.ink](https://hel.ink) · [Website](https://navi-crwn.github.io/hel.ink/) |
-| 🐰 | **[PixelHop](https://github.com/navi-crwn/pixelhop)** | Image hosting that strips GPS before anyone sees it, with an in-browser photo studio (OCR, background removal). One ~16 MB Go binary. | Go · SQLite · WebAssembly | [p.hel.ink](https://p.hel.ink) · [Website](https://navi-crwn.github.io/pixelhop/) |
+| 🔗 | **[HEL.ink](https://github.com/navi-crwn/hel.ink)** | Link shortener with click analytics and a block-based link-in-bio page. 20 themes, API & ShareX, 2FA, phishing scans. No premium tier. The account home for PixelHop too. | Laravel 12 · PHP · Tailwind | [hel.ink](https://hel.ink) · [Website](https://navi-crwn.github.io/hel.ink/) |
+| 🐰 | **[PixelHop](https://github.com/navi-crwn/pixelhop)** | Image hosting that strips GPS before anyone sees it, with a photo studio (OCR, background removal, magic eraser, HD upscale, face blur, QR), batch editing and copy-all links. Signs in with HEL.ink accounts. One ~16 MB Go binary. | Go · SQLite · WebAssembly · ONNX | [p.hel.ink](https://p.hel.ink) · [Website](https://navi-crwn.github.io/pixelhop/) |
 
 ## How I build
 
