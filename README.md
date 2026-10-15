@@ -1,4 +1,4 @@
-<p align="center"><picture><source media="(prefers-color-scheme: light)" srcset="assets/img/preview-light.webp"><img src="assets/img/preview-dark.webp" alt="navi-crwn: software that's private by default and yours to keep" width="100%"></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: light)" srcset="docs/assets/img/preview-light.webp"><img src="docs/assets/img/preview-dark.webp" alt="navi-crwn: software that's private by default and yours to keep" width="100%"></picture></p>
 
 <h1 align="center">Ivan Novskies · navi-crwn</h1>
 
@@ -26,10 +26,10 @@
 
 ## This site
 
-Plain HTML, CSS and a little JavaScript, served by GitHub Pages straight from `main`. Stars, releases and the repository list load live from the GitHub API; the page works without them.
+Plain HTML, CSS and a little JavaScript in `docs/`, served by GitHub Pages from `main` / `docs`. Stars, releases and the repository list load live from the GitHub API; the page works without them.
 
 ```bash
-python3 -m http.server   # preview at http://localhost:8000
+python3 -m http.server -d docs   # preview at http://localhost:8000
 npm install && npx playwright install chromium && npm run render   # re-render the README picture and social card
 ```
 

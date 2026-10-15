@@ -1,5 +1,5 @@
-// Renders the README preview (assets/img/preview-{dark,light}.webp) and the
-// social card (assets/img/social.jpg) from index.html.
+// Renders the README preview (docs/assets/img/preview-{dark,light}.webp) and the
+// social card (docs/assets/img/social.jpg) from docs/index.html.
 //   npm install && npx playwright install chromium && node scripts/render.mjs
 import { createServer } from 'node:http';
 import { readFile, writeFile } from 'node:fs/promises';
@@ -7,7 +7,7 @@ import { extname, join, normalize } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
 
-const root = fileURLToPath(new URL('../', import.meta.url));
+const root = fileURLToPath(new URL('../docs/', import.meta.url));
 const types = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg' };
 const server = createServer(async (req, res) => {
   const p = normalize(decodeURIComponent(new URL(req.url, 'http://x').pathname)).replace(/^([/\\])+/, '') || 'index.html';
