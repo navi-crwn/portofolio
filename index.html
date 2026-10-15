@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ivan Novskies (navi-crwn): open-source software</title>
+<meta name="description" content="Open-source tools that are private by default and yours to host: Amnesia for macOS, HEL.ink link shortener, PixelHop image hosting.">
+<meta name="theme-color" content="#07070a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f6f6fa" media="(prefers-color-scheme: light)">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ivan Novskies · navi-crwn">
+<meta property="og:description" content="Open-source tools that are private by default and yours to host.">
+<meta property="og:url" content="https://navi-crwn.github.io/portofolio/">
+<meta property="og:image" content="https://navi-crwn.github.io/portofolio/assets/img/social.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="https://avatars.githubusercontent.com/u/246850157?v=4&amp;s=64">
+<script>
+// Before paint: language, theme, "JS is on". ?lang= / ?theme= / ?shot override (used for the README picture).
+(function(){var d=document.documentElement,q=new URLSearchParams(location.search),l=null,t=null;d.classList.add('js');
+try{l=localStorage.getItem('lang');t=localStorage.getItem('theme')}catch(e){}
+l=q.get('lang')||l;t=q.get('theme')||t;if(q.has('shot'))d.classList.add('shot-mode');
+d.lang=l==='id'||l==='en'?l:((navigator.language||'').indexOf('id')===0?'id':'en');
+if(t==='light'||t==='dark')d.setAttribute('data-theme',t);})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&family=Instrument+Serif:ital@1&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main"><span data-en>Skip to content</span><span data-id>Langsung ke isi</span></a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-github" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></symbol>
+  <symbol id="i-web" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></symbol>
+</defs></svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="https://avatars.githubusercontent.com/u/246850157?v=4&amp;s=64" alt="" width="30" height="30">navi-crwn</a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#work"><span data-en>Work</span><span data-id>Karya</span></a>
+      <a href="#approach"><span data-en>Approach</span><span data-id>Cara kerja</span></a>
+      <a href="#stack">Stack</a>
+      <a href="#repos">Repos</a>
+      <a href="#contact"><span data-en>Contact</span><span data-id>Kontak</span></a>
+    </nav>
+    <div class="nav-r">
+      <button type="button" class="theme" id="theme" aria-label="Light or dark"><svg class="t-moon"><use href="#i-moon"/></svg><svg class="t-sun"><use href="#i-sun"/></svg></button>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" id="lang-en" aria-pressed="true" lang="en">EN</button>
+        <button type="button" id="lang-id" aria-pressed="false" lang="id">ID</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="glow" style="width:560px;height:560px;background:var(--indigo);right:-140px;top:0"></div>
+  <div class="glow" style="width:420px;height:420px;background:var(--cyan);left:-200px;top:40%;opacity:.16"></div>
+  <div class="wrap">
+    <div class="hi"><img src="https://avatars.githubusercontent.com/u/246850157?v=4&amp;s=128" alt="" width="52" height="52"><div><b>Ivan Novskies</b>@navi-crwn</div></div>
+    <h1><span data-en>Software that's <em class="s grad">private</em> by default and <em class="s grad">yours</em> to keep.</span><span data-id>Software yang <em class="s grad">privat</em> sejak awal dan <em class="s grad">milikmu</em> sepenuhnya.</span></h1>
+    <p class="lead"><span data-en>I build open-source tools people can run themselves: a Mac that forgets at logout, a link shortener with bio pages, and an image host that strips your location. Each one ships with real docs, a website and releases.</span><span data-id>Saya membuat alat open source yang bisa dijalankan sendiri: Mac yang lupa saat logout, pemendek link dengan halaman bio, dan image host yang menghapus lokasimu. Setiap proyek dirilis lengkap dengan dokumentasi, website dan rilisan.</span></p>
+    <div class="row">
+      <a class="btn main" href="#work"><span data-en>See the work</span><span data-id>Lihat karya</span></a>
+      <a class="btn" href="https://github.com/navi-crwn"><svg><use href="#i-github"/></svg>GitHub</a>
+    </div>
+    <div class="stats">
+      <div><b>3</b><span data-en>flagship projects</span><span data-id>proyek utama</span></div>
+      <div><b data-gh="stars">—</b><span data-en>GitHub stars</span><span data-id>bintang GitHub</span></div>
+      <div><b>4</b><span data-en>languages shipped: Swift, PHP, Go, JS</span><span data-id>bahasa dirilis: Swift, PHP, Go, JS</span></div>
+      <div><b>2</b><span data-en>languages in every README: EN & ID</span><span data-id>bahasa di setiap README: EN & ID</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="rv" style="margin-bottom:38px">
+      <div class="label"><span data-en>Selected work</span><span data-id>Karya pilihan</span></div>
+      <h2><span data-en>Three products, <em class="s grad">three stacks</em>.</span><span data-id>Tiga produk, <em class="s grad">tiga stack</em>.</span></h2>
+    </div>
+
+    <article class="project rv" style="--accent:#a78bfa" data-repo="amnesia">
+      <div class="copy">
+        <div class="top"><img src="assets/img/amnesia-icon.png" alt="" width="44" height="44"><div><span class="kind"><span data-en>macOS app · Swift</span><span data-id>Aplikasi macOS · Swift</span></span><h3>Amnesia</h3></div></div>
+        <p><span data-en>Your Mac forgets everything at logout: history, downloads, caches, app data. Your logins and the files you choose stay safe in an encrypted vault, back with one password.</span><span data-id>Mac-mu melupakan semuanya saat logout: riwayat, unduhan, cache, data aplikasi. Login dan file pilihanmu tetap aman di vault terenkripsi, kembali dengan satu password.</span></p>
+        <ul>
+          <li><span data-en>AES-256 Profile Vault for Chrome, WhatsApp, dev tools; panic word destroys it</span><span data-id>Profile Vault AES-256 untuk Chrome, WhatsApp, tool developer; kata panik menghancurkannya</span></li>
+          <li><span data-en>Backups to USB, your own server over SSH, or Google Drive, Dropbox, OneDrive</span><span data-id>Backup ke USB, server sendiri lewat SSH, atau Google Drive, Dropbox, OneDrive</span></li>
+          <li><span data-en>Homebrew tap, self-updates verified with SHA-256, and a Windows version</span><span data-id>Homebrew tap, update otomatis diverifikasi SHA-256, dan versi Windows</span></li>
+        </ul>
+        <div class="tags"><span>SwiftUI</span><span>Bash</span><span>AES-256</span><span>rclone</span><span>Homebrew</span></div>
+        <div class="row"><a class="btn sm" href="https://navi-crwn.github.io/amnesia/"><svg><use href="#i-web"/></svg>Website</a><a class="btn sm" href="https://github.com/navi-crwn/amnesia"><svg><use href="#i-github"/></svg>Code</a></div>
+        <div class="live"><span>★ <b data-f="stars">—</b></span><span><span data-en>release</span><span data-id>rilis</span> <b data-f="release">—</b></span><span><span data-en>updated</span><span data-id>diperbarui</span> <b data-f="pushed">—</b></span></div>
+      </div>
+      <div class="pic themed"><img class="dk" src="assets/img/amnesia-dark.webp" alt="Amnesia website: Your Mac forgets everything. Except what you keep." loading="lazy"><img class="lt" src="assets/img/amnesia-light.webp" alt="" loading="lazy"></div>
+    </article>
+
+    <article class="project rev rv" style="--accent:#22d3ee" data-repo="hel.ink">
+      <div class="copy">
+        <div class="top"><img src="assets/img/helink-icon.png" alt="" width="44" height="44"><div><span class="kind"><span data-en>Web platform · Laravel</span><span data-id>Platform web · Laravel</span></span><h3>HEL.ink</h3></div></div>
+        <p><span data-en>Short links that count every click, plus a link-in-bio page built from blocks. Free for everyone, no premium tier, and the whole thing is self-hostable.</span><span data-id>Link pendek yang menghitung setiap klik, plus halaman link in bio dari blok-blok. Gratis untuk semua, tanpa paket premium, dan bisa di-host sendiri.</span></p>
+        <ul>
+          <li><span data-en>Analytics by country, device and referrer, with CSV export</span><span data-id>Analitik per negara, perangkat dan referrer, dengan ekspor CSV</span></li>
+          <li><span data-en>20 bio themes, animations, 150+ brand icons, password and age gates</span><span data-id>20 tema bio, animasi, 150+ ikon brand, kunci password dan cek umur</span></li>
+          <li><span data-en>REST API and ShareX, 2FA, hourly scans for phishing links</span><span data-id>REST API dan ShareX, 2FA, pemindaian link phishing tiap jam</span></li>
+        </ul>
+        <div class="tags"><span>Laravel 12</span><span>PHP 8.2</span><span>Tailwind</span><span>MySQL / Postgres</span><span>Redis</span></div>
+        <div class="row"><a class="btn sm" href="https://hel.ink"><svg><use href="#i-arrow"/></svg>hel.ink</a><a class="btn sm" href="https://navi-crwn.github.io/hel.ink/"><svg><use href="#i-web"/></svg>Website</a><a class="btn sm" href="https://github.com/navi-crwn/hel.ink"><svg><use href="#i-github"/></svg>Code</a></div>
+        <div class="live"><span>★ <b data-f="stars">—</b></span><span><span data-en>forks</span><span data-id>fork</span> <b data-f="forks">—</b></span><span><span data-en>updated</span><span data-id>diperbarui</span> <b data-f="pushed">—</b></span></div>
+      </div>
+      <div class="pic themed"><img class="dk" src="assets/img/helink-dark.webp" alt="HEL.ink website: short links, beautiful bio pages" loading="lazy"><img class="lt" src="assets/img/helink-light.webp" alt="" loading="lazy"></div>
+    </article>
+
+    <article class="project rv" style="--accent:#a3e635" data-repo="pixelhop">
+      <div class="copy">
+        <div class="top"><img src="assets/img/pixelhop-icon.svg" alt="" width="44" height="44" style="image-rendering:pixelated"><div><span class="kind"><span data-en>Image host · Go</span><span data-id>Image host · Go</span></span><h3>PixelHop</h3></div></div>
+        <p><span data-en>Drop an image, get a link. GPS and camera data are stripped without re-compressing, and a photo studio edits images inside the browser. Rebuilt from PHP into a single ~16 MB Go binary after a full security audit.</span><span data-id>Lempar gambar, dapat link. Data GPS dan kamera dihapus tanpa kompresi ulang, dan studio foto mengedit gambar di dalam browser. Dibangun ulang dari PHP jadi satu binary Go ~16 MB setelah audit keamanan menyeluruh.</span></p>
+        <ul>
+          <li><span data-en>Lossless EXIF/XMP/IPTC stripping, albums, self-destruct links, QR codes</span><span data-id>Penghapusan EXIF/XMP/IPTC tanpa kompresi ulang, album, link hapus otomatis, QR code</span></li>
+          <li><span data-en>In-browser OCR and background removal; the server never runs AI</span><span data-id>OCR dan hapus background di browser; server tidak menjalankan AI</span></li>
+          <li><span data-en>SQLite inside, disk or S3 with a hand-written SigV4 signer, ShareX API</span><span data-id>SQLite di dalam, disk atau S3 dengan signer SigV4 buatan sendiri, API ShareX</span></li>
+        </ul>
+        <div class="tags"><span>Go</span><span>SQLite</span><span>WebAssembly</span><span>S3</span><span>Docker</span></div>
+        <div class="row"><a class="btn sm" href="https://p.hel.ink"><svg><use href="#i-arrow"/></svg>p.hel.ink</a><a class="btn sm" href="https://navi-crwn.github.io/pixelhop/"><svg><use href="#i-web"/></svg>Website</a><a class="btn sm" href="https://github.com/navi-crwn/pixelhop"><svg><use href="#i-github"/></svg>Code</a></div>
+        <div class="live"><span>★ <b data-f="stars">—</b></span><span><span data-en>language</span><span data-id>bahasa</span> <b>Go</b></span><span><span data-en>updated</span><span data-id>diperbarui</span> <b data-f="pushed">—</b></span></div>
+      </div>
+      <div class="pic themed"><img class="dk" src="assets/img/pixelhop-dark.webp" alt="PixelHop website: drop an image, get a link" loading="lazy"><img class="lt" src="assets/img/pixelhop-light.webp" alt="" loading="lazy"></div>
+    </article>
+  </div>
+</section>
+
+<section id="approach">
+  <div class="wrap">
+    <div class="rv" style="margin-bottom:34px">
+      <div class="label"><span data-en>How I build</span><span data-id>Cara saya membangun</span></div>
+      <h2><span data-en>Four rules every project follows.</span><span data-id>Empat aturan di setiap proyek.</span></h2>
+    </div>
+    <div class="grid rv">
+      <div class="card"><span class="n">01</span><h4><span data-en>Private by default</span><span data-id>Privat sejak awal</span></h4><p><span data-en>No trackers, no analytics, no data leaving the device unless the user asks. Amnesia wipes, PixelHop strips GPS, HEL.ink loads pixels only after consent.</span><span data-id>Tanpa pelacak, tanpa analitik, tidak ada data keluar kecuali pengguna memintanya. Amnesia menghapus, PixelHop membuang GPS, HEL.ink memuat pixel hanya setelah izin.</span></p></div>
+      <div class="card"><span class="n">02</span><h4><span data-en>Yours to host</span><span data-id>Bisa di-host sendiri</span></h4><p><span data-en>Open source, MIT licensed, and documented well enough that anyone can run their own copy, on their own domain.</span><span data-id>Open source, lisensi MIT, dan didokumentasikan cukup baik supaya siapa pun bisa menjalankan versinya sendiri, di domainnya sendiri.</span></p></div>
+      <div class="card"><span class="n">03</span><h4><span data-en>Docs are product</span><span data-id>Dokumentasi adalah produk</span></h4><p><span data-en>Every repo has a bilingual README, a website, and pictures rendered straight from that website so they never drift apart.</span><span data-id>Setiap repo punya README dua bahasa, website, dan gambar yang dirender langsung dari website itu supaya tidak pernah berbeda.</span></p></div>
+      <div class="card"><span class="n">04</span><h4><span data-en>Ship, then keep shipping</span><span data-id>Rilis, lalu terus rilis</span></h4><p><span data-en>Versioned releases, changelogs, CI, Homebrew and Docker. Amnesia alone is past version 5.</span><span data-id>Rilis berversi, changelog, CI, Homebrew dan Docker. Amnesia saja sudah melewati versi 5.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="wrap">
+    <div class="rv" style="margin-bottom:34px">
+      <div class="label">Stack</div>
+      <h2><span data-en>The right tool <em class="s grad">for each job</em>.</span><span data-id>Alat yang tepat <em class="s grad">untuk tiap pekerjaan</em>.</span></h2>
+      <p class="lead"><span data-en>A native Mac app in Swift, a feature-rich web platform in Laravel, a lean server in Go.</span><span data-id>Aplikasi Mac native dengan Swift, platform web kaya fitur dengan Laravel, server ramping dengan Go.</span></p>
+    </div>
+    <div class="stack rv">
+      <div class="card"><h4><span data-en>Languages</span><span data-id>Bahasa</span></h4><div class="chips"><span>Go</span><span>Swift <i>SwiftUI</i></span><span>PHP <i>Laravel</i></span><span>JavaScript</span><span>SQL</span><span>Bash</span></div></div>
+      <div class="card"><h4><span data-en>Data & storage</span><span data-id>Data & storage</span></h4><div class="chips"><span>SQLite</span><span>MySQL</span><span>PostgreSQL</span><span>Redis</span><span>S3 / R2</span><span>7-Zip AES</span></div></div>
+      <div class="card"><h4><span data-en>Shipping</span><span data-id>Rilis & infrastruktur</span></h4><div class="chips"><span>Docker</span><span>nginx</span><span>Cloudflare</span><span>GitHub Actions</span><span>Homebrew</span><span>Playwright</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="repos">
+  <div class="wrap">
+    <div class="rv" style="margin-bottom:28px">
+      <div class="label"><span data-en>On GitHub</span><span data-id>Di GitHub</span></div>
+      <h2><span data-en>Public repositories</span><span data-id>Repository publik</span></h2>
+      <p class="lead"><span data-en>Loaded live from GitHub.</span><span data-id>Dimuat langsung dari GitHub.</span></p>
+    </div>
+    <div class="repos rv" id="repo-list">
+      <a class="repo" href="https://github.com/navi-crwn/amnesia"><b>amnesia</b><p>Your Mac forgets everything at logout. Except the logins and files you keep.</p><small><span><span class="dotl" style="background:#F05138"></span>Swift</span></small></a>
+      <a class="repo" href="https://github.com/navi-crwn/hel.ink"><b>hel.ink</b><p>Open-source URL shortener & Link in Bio platform.</p><small><span><span class="dotl" style="background:#f7523f"></span>Blade</span></small></a>
+      <a class="repo" href="https://github.com/navi-crwn/pixelhop"><b>pixelhop</b><p>Open-source image hosting with a private, in-browser photo studio.</p><small><span><span class="dotl" style="background:#00ADD8"></span>Go</span></small></a>
+      <a class="repo" href="https://github.com/navi-crwn/homebrew-tap"><b>homebrew-tap</b><p>Homebrew tap for Amnesia.</p><small><span><span class="dotl" style="background:#701516"></span>Ruby</span></small></a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="label"><span data-en>Contact</span><span data-id>Kontak</span></div>
+    <h2><span data-en>Have an idea, a bug or a job?</span><span data-id>Punya ide, bug, atau pekerjaan?</span></h2>
+    <p class="lead" style="margin:0 auto 28px"><span data-en>Open an issue on any project, or reach out on GitHub.</span><span data-id>Buka issue di proyek mana saja, atau hubungi lewat GitHub.</span></p>
+    <div class="row"><a class="btn main" href="https://github.com/navi-crwn"><svg><use href="#i-github"/></svg>@navi-crwn</a></div>
+  </div>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© Ivan Novskies · <span data-en>built by hand, no frameworks</span><span data-id>dibuat manual, tanpa framework</span></span>
+    <nav>
+      <a href="https://navi-crwn.github.io/amnesia/">Amnesia</a>
+      <a href="https://navi-crwn.github.io/hel.ink/">HEL.ink</a>
+      <a href="https://navi-crwn.github.io/pixelhop/">PixelHop</a>
+      <a href="https://github.com/navi-crwn/portofolio"><span data-en>Source</span><span data-id>Kode</span></a>
+    </nav>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

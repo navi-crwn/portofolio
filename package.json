@@ -1,0 +1,3 @@
+{ "name": "navi-crwn-portfolio", "private": true, "type": "module",
+  "scripts": { "render": "node scripts/render.mjs" },
+  "devDependencies": { "playwright": "1.48.2" } }
